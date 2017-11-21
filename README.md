@@ -21,6 +21,8 @@ sudo chmod 755 /mnt/data
 
 If you have problems, it helps to look a tt he error log at /var/log/apache2/error.log
 
+if you prefer a graphical editor in superuser mode:
+SUDO_EDITOR="gedit -w" sudoedit /etc/apache2/sites-available/000-default.conf 
 
 
 
