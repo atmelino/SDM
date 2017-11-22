@@ -1,7 +1,8 @@
 # SDM
 
 
-Install web server
+
+Web Server Installation
 
 sudo apt-get install tasksel
 
@@ -27,8 +28,10 @@ SUDO_EDITOR="gedit -w" sudoedit /etc/apache2/sites-available/000-default.conf
 
 
 
+Drupal installation
 
-
+https://theaccidentalcoder.com/content/drupal-and-permissions-avoiding-directory-sitesdefaultfiles-not-writable-error
+sudo chown www-data:www-data [path-to-my-Drupal-directory]/sites/default/files -R
 
 
 
