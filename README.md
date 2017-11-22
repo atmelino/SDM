@@ -38,7 +38,13 @@ sudo chown www-data:www-data [path-to-my-Drupal-directory]/sites/default/files -
 
 same for the settings file.
 
+clean URL
+https://www.drupal.org/node/15365
 
+
+a2enmod rewrite
+
+change AllowOverride None to AllowOverride All
 
 
 
