@@ -50,9 +50,11 @@ change AllowOverride None to AllowOverride All
 In admin mode, click on configuration.
 Errors:
 
-(1) 
+(1) update manager module
 
 (2) trusted host pattern error
+
+https://drupal.stackexchange.com/questions/145690/untrusted-host-localhost-in/145994#145994
 
 $settings['trusted_host_patterns'] = array(
   '^example\.com$',
