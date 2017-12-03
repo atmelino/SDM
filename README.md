@@ -65,6 +65,13 @@ $settings['trusted_host_patterns'] = array(
 
 
 
+create new user account error
+
+Message: "Unable to send email. Contact the site administrator if the problem persists."
+
+
+
+
 
 
 
