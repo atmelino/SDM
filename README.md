@@ -2,7 +2,7 @@
 
 
 
-Web Server Installation
+<h2>Web Server Installation</h2>
 
 sudo apt-get install tasksel
 
@@ -20,7 +20,7 @@ If the location is a mounted drive, make sure that the location has permissions 
 
 sudo chmod 755 /mnt/data
 
-If you have problems, it helps to look a tt he error log at /var/log/apache2/error.log
+If you have problems, it helps to look at the error log at /var/log/apache2/error.log
 
 if you prefer a graphical editor in superuser mode:
 SUDO_EDITOR="gedit -w" sudoedit /etc/apache2/sites-available/000-default.conf 
@@ -28,12 +28,13 @@ SUDO_EDITOR="gedit -w" sudoedit /etc/apache2/sites-available/000-default.conf
 
 
 
-Drupal installation
+<h2>Drupal installation</h2>
 
 
 
 
 https://theaccidentalcoder.com/content/drupal-and-permissions-avoiding-directory-sitesdefaultfiles-not-writable-error
+
 sudo chown www-data:www-data [path-to-my-Drupal-directory]/sites/default/files -R
 
 same for the settings file.
@@ -41,10 +42,25 @@ same for the settings file.
 clean URL
 https://www.drupal.org/node/15365
 
-
 a2enmod rewrite
 
 change AllowOverride None to AllowOverride All
+
+
+In admin mode, click on configuration.
+Errors:
+
+(1) 
+
+(2) trusted host pattern error
+
+$settings['trusted_host_patterns'] = array(
+  '^example\.com$',
+  '^www\.example\.com$',
+  '^localhost$',
+);
+
+
 
 
 
