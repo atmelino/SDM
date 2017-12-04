@@ -91,6 +91,17 @@ https://askubuntu.com/questions/161759/how-to-access-a-shared-folder-in-virtualb
 
 <h2>Drupal installation</h2>
 
+download Drupal from http://www.drupal.org
+
+extract the file in the location where you want the web server
+
+point a web browser to that location.
+
+typical errors during installation:
+
+(1) PHP EXTENSIONS Disabled
+
+sudo apt-get install php-gd
 
 
 
