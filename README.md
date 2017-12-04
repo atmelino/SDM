@@ -67,6 +67,8 @@ sudo usermod -a -G vboxsf your_user_name
 
 logout and log back in
 
+https://askubuntu.com/questions/161759/how-to-access-a-shared-folder-in-virtualbox
+
 
 <h2>Web Server Installation on Digitalocean</h2>
 
