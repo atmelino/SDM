@@ -102,6 +102,7 @@ typical errors during installation:
 (1) PHP EXTENSIONS Disabled
 
 sudo apt-get install php-gd
+sudo apt-get install php-xml
 
 
 
