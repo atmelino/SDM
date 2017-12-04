@@ -112,6 +112,8 @@ https://theaccidentalcoder.com/content/drupal-and-permissions-avoiding-directory
 
 (3) SETTINGS FILE The Settings file does not exist.
 
+in sites/default, copy default.settings.php to settings.php
+then change owner
 sudo chown www-data:www-data settings.php 
 
 (4) CLEAN URLS Disabled
