@@ -97,7 +97,7 @@ extract the file in the location where you want the web server
 
 point a web browser to that location.
 
-Typical errors/warnings during installation:
+<h3>Typical errors/warnings during installation:</h3>
 
 (1) PHP EXTENSIONS Disabled
 
@@ -118,11 +118,17 @@ sudo chown www-data:www-data settings.php
 
 (4) CLEAN URLS Disabled
 
+enable the Apache rewrite module:
+
+sudo a2enmod rewrite
+
+edit Apache config:
+
+sudo nano /etc/apache2/sites-available/000-default.conf
+
+then change AllowOverride None to AllowOverride All
+
 https://www.drupal.org/node/15365
-
-a2enmod rewrite
-
-change AllowOverride None to AllowOverride All
 
 
 
