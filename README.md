@@ -2,7 +2,7 @@
 
 
 
-<h2>Web Server Installation</h2>
+<h2>Web Server Installation on Desktop Machine</h2>
 
 sudo apt-get install tasksel
 
@@ -24,6 +24,13 @@ If you have problems, it helps to look at the error log at /var/log/apache2/erro
 
 if you prefer a graphical editor in superuser mode:
 SUDO_EDITOR="gedit -w" sudoedit /etc/apache2/sites-available/000-default.conf 
+
+
+<h2>Web Server Installation inside Virtualbox</h2>
+
+http://blog.teamtreehouse.com/set-up-a-linux-server-on-virtualbox
+
+
 
 
 
