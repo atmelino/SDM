@@ -53,6 +53,13 @@ https://askubuntu.com/questions/237461/how-do-i-access-ubuntu-server-running-in-
 
 http://blog.teamtreehouse.com/set-up-a-linux-server-on-virtualbox)
 
+Install guest additions to make it easier to copy files (shared folders):
+
+https://www.techrepublic.com/article/how-to-install-virtualbox-guest-additions-on-a-gui-less-ubuntu-server-host/
+
+
+
+
 
 <h2>Web Server Installation on Digitalocean</h2>
 
