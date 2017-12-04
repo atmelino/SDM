@@ -20,7 +20,19 @@ If the location is a mounted drive, make sure that the location has permissions 
 
 sudo chmod 755 /mnt/data
 
+other things that might have helped:
+
+sudo chgrp -R www-data /mnt/data
+
+sudo usermod -a -G www-data user
+
+
+
+
 If you have problems, it helps to look at the error log at /var/log/apache2/error.log
+
+
+
 
 if you prefer a graphical editor in superuser mode:
 SUDO_EDITOR="gedit -w" sudoedit /etc/apache2/sites-available/000-default.conf 
@@ -88,6 +100,10 @@ sudo chown www-data:www-data [path-to-my-Drupal-directory]/sites/default/files -
 
 same for the settings file.
 
+sudo chown www-data:www-data files -R
+
+sudo chown www-data:www-data settings.php 
+
 clean URL
 https://www.drupal.org/node/15365
 
@@ -117,11 +133,4 @@ $settings['trusted_host_patterns'] = array(
 create new user account error
 
 Message: "Unable to send email. Contact the site administrator if the problem persists."
-
-
-
-
-
-
-
 
