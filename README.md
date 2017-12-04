@@ -28,7 +28,33 @@ SUDO_EDITOR="gedit -w" sudoedit /etc/apache2/sites-available/000-default.conf
 
 <h2>Web Server Installation inside Virtualbox</h2>
 
-http://blog.teamtreehouse.com/set-up-a-linux-server-on-virtualbox
+download server ISO from http://www.ubuntu.com
+
+start virtualbox
+
+create new VM
+
+etc.
+
+choose LAMP server and mailserver
+
+etc.
+
+in virtualbox click on settings for the VM, network, select bridged adapter.
+
+on the server, type ifconfig to get the IP address of the server.
+
+outside VM, open web browser, enter the IP address.
+
+https://askubuntu.com/questions/237461/how-do-i-access-ubuntu-server-running-in-virtualbox-from-outside
+
+
+(works for ssh but not for http:
+
+http://blog.teamtreehouse.com/set-up-a-linux-server-on-virtualbox)
+
+
+<h2>Web Server Installation on Digitalocean</h2>
 
 
 
