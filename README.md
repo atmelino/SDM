@@ -59,7 +59,13 @@ https://www.techrepublic.com/article/how-to-install-virtualbox-guest-additions-o
 
 on host, setup a shared folder by clicking on settings (folder has to exist for OK button to be enabled) 
 
-on guest, after reboot, folder will be accessible at /media/sf_your_folder_name
+on guest, after reboot, folder will be at /media/sf_your_folder_name
+
+To make it accessible to you: 
+
+sudo usermod -a -G vboxsf your_user_name
+
+logout and log back in
 
 
 <h2>Web Server Installation on Digitalocean</h2>
