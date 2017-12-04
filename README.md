@@ -57,8 +57,9 @@ Install guest additions to make it easier to copy files (shared folders):
 
 https://www.techrepublic.com/article/how-to-install-virtualbox-guest-additions-on-a-gui-less-ubuntu-server-host/
 
+on host, setup a shared folder by clicking on settings (folder has to exist for OK button to be enabled) 
 
-
+on guest, after reboot, folder will be accessible at /media/sf_your_folder_name
 
 
 <h2>Web Server Installation on Digitalocean</h2>
