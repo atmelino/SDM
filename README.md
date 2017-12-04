@@ -97,31 +97,31 @@ extract the file in the location where you want the web server
 
 point a web browser to that location.
 
-typical errors during installation:
+Typical errors/warnings during installation:
 
 (1) PHP EXTENSIONS Disabled
 
 sudo apt-get install php-gd
 sudo apt-get install php-xml
 
+(2) The directory sites/default/files is not writable
 
+sudo chown www-data:www-data sites/default/files -R
 
 https://theaccidentalcoder.com/content/drupal-and-permissions-avoiding-directory-sitesdefaultfiles-not-writable-error
 
-sudo chown www-data:www-data [path-to-my-Drupal-directory]/sites/default/files -R
-
-same for the settings file.
-
-sudo chown www-data:www-data files -R
+(3) SETTINGS FILE The Settings file does not exist.
 
 sudo chown www-data:www-data settings.php 
 
-clean URL
+(4) CLEAN URLS Disabled
+
 https://www.drupal.org/node/15365
 
 a2enmod rewrite
 
 change AllowOverride None to AllowOverride All
+
 
 
 In admin mode, click on configuration.
