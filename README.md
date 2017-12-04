@@ -131,7 +131,7 @@ then change AllowOverride None to AllowOverride All
 https://www.drupal.org/node/15365
 
 
-
+<h3>Post installation errors</h3>
 In admin mode, click on configuration.
 Errors:
 
